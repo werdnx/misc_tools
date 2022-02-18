@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">data</string>
+    <string name="eng_locale_name" translatable="false">English</string>
+    <string name="rus_locale_name" translatable="false">Russian</string>
+    <string name="never">Never</string>
+
+
+    <string name="billet_ticket">TICKET № %1$s\n\n</string>
+    <string name="billet_route">ROUTE %1$s\n</string>
+    <string name="billet_payment">PAYMENT %1$s %2$s\n</string>
+    <string name="billet_card">CARD: %1$s\n</string>
+    <string name="billet_time">TIME %1$s\n</string>
+    <string name="billet_category">CATEGORY %1$s\n</string>
+
+    <string name="batch_id">Batch id: %1$s\n</string>
+    <string name="batch_opaned">Batch opened: %1$s\n</string>
+    <string name="print_time">Print time: %1$s\n</string>
+    <string name="conductor">CONDUCTOR UID: %1$s\n</string>
+    <string name="terminal_uid">TERMINAL UID: %1$s\n</string>
+    <string name="result_sum">RESULT: %1$s \n</string>
+
+    <string name="event_result">Event:</string>
+    <string name="event_count_result">Count:</string>
+    <string name="event_cost_result">Cost:</string>
+    <string name="no_fare">With automatic rate selection (not included in total)</string>
+    <string name="invalid_credential">Invalid credential</string>
+    <string name="can_not_buy_ticket">Can not buy ticket</string>
+    <string name="can_not_search_tickets">Can\'t search tickets</string>
+    <string name="acl_sync_status">D:[%1$s/%2$s]</string>
+    <string name="card_acl_detail_status">Card ACL information\n\nTotal page count: %1$s\nPages processed: %2$s</string>
+    <string name="tr_status">A:[%1$s/%2$s]</string>
+    <string name="tr_detail_status">Authorization information\n\nTotal count on device: %1$s\nNot synchronize: %2$s</string>
+    <string name="batches_status">B:[%1$s/%2$s]</string>
+    <string name="batches_detail_status">Batches information\n\nTotal count on device: %1$s\nNot closed: %2$s</string>
+    <string name="unknown_server_response">Unknown server response</string>
+    <string name="unknown_reservation_work_flow">Unknown reservation work flow</string>
+</resources>

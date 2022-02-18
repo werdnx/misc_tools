@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">البيانات</string>
+    <string name="eng_locale_name" translatable="false">انجليزى</string>
+    <string name="rus_locale_name" translatable="false">روسى</string>
+    <string name="never">ابدا</string>
+
+
+    <string name="billet_ticket">TICKET № %1$s\n\n</string>
+    <string name="billet_route">ROUTE %1$s\n</string>
+    <string name="billet_payment">PAYMENT %1$s %2$s\n</string>
+    <string name="billet_card">CARD: %1$s\n</string>
+    <string name="billet_time">TIME %1$s\n</string>
+    <string name="billet_category">CATEGORY %1$s\n</string>
+
+    <string name="batch_id">Batch id: %1$s\n</string>
+    <string name="batch_opaned">Batch opened: %1$s\n</string>
+    <string name="print_time">Print time: %1$s\n</string>
+    <string name="conductor">CONDUCTOR UID: %1$s\n</string>
+    <string name="terminal_uid">TERMINAL UID: %1$s\n</string>
+    <string name="result_sum">RESULT: %1$s \n</string>
+
+    <string name="event_result">حدث:</string>
+    <string name="event_count_result">عدد:</string>
+    <string name="event_cost_result">تكلفه:</string>
+    <string name="no_fare">مع اختيار السعر التلقائي (غير مدرج في المجموع)</string>
+    <string name="invalid_credential">شهادة اعتماد غير صالحة</string>
+    <string name="can_not_buy_ticket">لا يمكن شراء التذكرة</string>
+    <string name="can_not_search_tickets">لا يمكن البحث عن التذاكر</string>
+</resources>
