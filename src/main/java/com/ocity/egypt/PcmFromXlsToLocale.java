@@ -16,8 +16,14 @@ import java.nio.file.StandardOpenOption;
 
 public class PcmFromXlsToLocale {
     public static void main(String[] args) throws IOException {
-        convert("C:\\develop\\misc_tools\\src\\main\\resources\\app\\to_translate_app.xlsx",
-                "C:\\develop\\misc_tools\\src\\main\\resources\\app\\strings-ar-rEG_new.xml");
+//        convert("/Users/dmitrenkoandrey/IdeaProjects/misc_tools/src/main/resources/app/to_translate_app_ar.xlsx",
+//                "/Users/dmitrenkoandrey/IdeaProjects/misc_tools/src/main/resources/app/strings-ar-rEG_new.xml");
+//
+//        convert("/Users/dmitrenkoandrey/IdeaProjects/misc_tools/src/main/resources/data/to_translate_data1Page.xlsx",
+//                "/Users/dmitrenkoandrey/IdeaProjects/misc_tools/src/main/resources/data/strings-ar-rEG_new.xml");
+
+        convert("/Users/dmitrenkoandrey/IdeaProjects/misc_tools/src/main/resources/device/to_translate_device1Page.xlsx",
+                "/Users/dmitrenkoandrey/IdeaProjects/misc_tools/src/main/resources/device/strings-ar-rEG_new.xml");
     }
 
     public static void convert(String xlsxPath, String outPath) throws IOException {
@@ -30,11 +36,20 @@ public class PcmFromXlsToLocale {
         for (Row row : sheet) {
             Cell cell0 = row.getCell(0);
             Cell cell2 = row.getCell(2);
-            res.getString().add(new ResourceItem(cell0.getStringCellValue(), cell2.getStringCellValue()));
+            res.getString().add(new ResourceItem(value(cell0), value(cell2)));
         }
         ObjectMapper xmlMapper = new XmlMapper();
         String resultString = xmlMapper.writeValueAsString(res);
         Files.writeString(new File(outPath).toPath(), resultString, StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.CREATE);
 
+    }
+
+    public static String value(Cell cell) {
+        switch (cell.getCellType()) {
+            case NUMERIC:
+                return String.valueOf(cell.getNumericCellValue());
+            default:
+                return cell.getStringCellValue();
+        }
     }
 }
