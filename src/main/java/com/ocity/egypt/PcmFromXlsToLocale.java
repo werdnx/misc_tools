@@ -21,7 +21,7 @@ public class PcmFromXlsToLocale {
     }
 
     public static void convert(String xlsxPath, String outPath) throws IOException {
-        FileInputStream file = new FileInputStream(new File(xlsxPath));
+        FileInputStream file = new FileInputStream(xlsxPath);
         Workbook workbook = new XSSFWorkbook(file);
         Sheet sheet = workbook.getSheetAt(0);
 
