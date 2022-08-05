@@ -1,0 +1,4 @@
+docker rm pgsql_container
+docker build --tag pgsql_v1 .
+docker run --name ocity_db_egp -p 5432:5432 -e POSTGRES_PASSWORD=ocity -e POSTGRES_USER=ocity -e POSTGRES_DB=ocity -v D:\\docker\\db_data_egp:/var/lib/postgresql/data -v D:\\ocity\\egypt\\db_dump\\2022_06_08\\ocity-2022-06-08:/var/lib/postgresql/dump -d postgis/postgis
+

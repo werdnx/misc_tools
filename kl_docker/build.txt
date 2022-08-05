@@ -1,0 +1,2 @@
+docker rm kl-home
+docker build --tag kl-home .

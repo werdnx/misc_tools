@@ -1,0 +1,4 @@
+docker rm kl-home-full
+docker build --tag kl-home-full .
+
+docker run --name kl-home-full -v d:\\docker\\kl-home-full:\app -it kl-home-full
