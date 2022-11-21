@@ -1,0 +1,1 @@
+docker run --name ocity_aws_test_db -p 5432:5432 -e POSTGRES_PASSWORD=ocity -e POSTGRES_USER=ocity -e POSTGRES_DB=ocity -v D:\\docker\\aws_db\\data:/var/lib/postgresql/data -v D:\\docker\\aws_db\\dump:/var/lib/postgresql/dump -d --shm-size=1g postgis/postgis
