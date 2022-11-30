@@ -1,0 +1,1823 @@
+search:
+  nothing_found: No trains found at this day
+register:
+  city: City
+  signup: Sign UP
+  phone: Phone
+  email: Email
+  phone_or_email: Phone or email
+  sendcode: Send code
+  code_was_sent_to_phone: Code was sent to your mobile phone
+  code_was_sent_to_email: Code was sent to your e-mail
+  user_was_created: Registration successfully
+  user_was_created_sub: User was successfully created. Now you can login.
+  success_logined: Successfully logined
+  password_length: Password must have at least 7 characters
+  password_format: Password should include digits, letters and special chars
+  password_hint: Minimal length is 7. Should include digits, letters and special chars (!#&#x40;$%*^&+=)
+  password: Password
+  password_repeat: Repeat password
+  passwords_dont_match: Passwords don't match
+  user_already_exists: This user already exists
+  resend_code: Resend
+  nationalIdLength: register.nationalIdLength
+  nationalIdTest: register.nationalIdTest
+reset_password:
+  user_not_found: User not found
+  sendcode: Send code
+  change_password: Change password
+  password_changed: Password changed
+  password_changed_sub: Password was successfully changed. Now you can login.
+app:
+  title:
+    bus:
+      enr: Bus Booking
+      mja: Moja Ride Booking
+    railway:
+      enr: Egypt National Railways
+general:
+  coach: Coach
+  contact:
+    mobile: Contact Phone number
+    email: Contact e-mail
+    name: Contact name
+    second_name: Second Name
+navigations:
+  transactions: Transactions
+  admin_tools: Admin tools
+  home: Home
+  about: About
+  login: Login
+  signup: Sign Up
+  passengers: Your passengers
+  orders: Orders/Tickets
+  logout: Logout
+  coaches: Coaches
+  workorders: Trips
+  scheduled: Scheduled
+  faremaster: Fare Master
+  fares: Fare Master
+  fares_all: Fares
+  servicetrippoints: Trip Points
+  services: Trains
+  distances: Distances
+  fare_operations: Formulas (operations)
+  fields: Fields
+  search: Search
+  reports: Reports
+  merchantservices: Report Templates
+  devices: Devices
+  workorderspcm: Device WorkOrders
+  offices: Offices
+  windows: Windows
+  stations: Stations
+  workorders_all: Work Order All
+  counterfields: Counter groups
+  settings: Settings
+  users: Users
+  testfares: Test Fares
+  events: Events
+  shifts: Shifts
+  dashboard: Dashboard
+  cityofficesgroups: City Offices Groups
+  gatesmonitoring: Gates monitoring
+  roles: Roles
+  params: Params
+  penalties: Penalties
+  luggagefares: Luggage Fares
+  luggagepenalties: Luggage Penalties
+  distance_rule: Distance rules
+  extra_fee: Extra Fees
+  coffices: City Offices
+  voucherupgradefares: Voucher Upgrade
+  voucherfares: Voucher Fares
+  enr_voucher: Vouchers
+  enr_coach_class: Coach classes
+  subsc_upg: Sub Upgrade
+  staticfares: Static Fares
+  buses: Buses
+  schedules: Schedules
+  top_up: Top up
+  cards: Cards
+  reports_history: Report History
+  book_tickets: Book Tickets
+  zero_distances: Zero Distances
+  profile: Profile settings
+  gatelines: Gate Lines
+  tom_pcm: TOMs
+  card_sales: Card sales
+  code_reservations: Group Reservations
+  transport_card_sales: Transport Card
+  enr_train_description: navigations.enr_train_description
+transactions:
+  generate_data: Generate data
+  type_codes_for_search: Type codes for search
+  type_to_search: Type to search
+cards:
+  select_account: Select account
+  pay: Pay
+  top_up: Top up
+  trnsport_card_limit_error: The maximum limit of transport cards is {limit}
+dictionaries:
+  period: period
+  year: year
+  month: month
+  week: week
+  day: day
+  hour: hour
+  minute: minute
+  second: second
+card_sales:
+  sell: Sell
+  cash_mode: CASH
+  card_mode: CARD
+  pay_mode: Pay Mode
+  amount: Amount
+  enter_amount: Enter the amount
+  enter_card_number: Enter the сard number
+  enter_operation_code: Auth Code
+  card_sell_successful: Card sell successful
+  approval: Approval
+  approval_code: Approval Code
+  send_otp: Send OTP
+  otp: OTP
+top_up:
+  cashier: Cashier
+  open_shift: Open shift
+  top_up_card: Top-up
+  enter_card_number: Enter the сard number
+  enter_amount: Enter the amount
+  payment_successful: Payment successful
+  pay_mode: Pay Mode
+  cash_mode: CASH
+  card_mode: CARD
+  by_cash: By Cash
+  bank_card: By Card
+  enter_operation_code: Auth Code
+  total: Total
+  are_you_sure_topup: Are you sure to Top-Up Agent Account?
+  approval_code: Approval Code
+dashboard:
+  static: Static
+  dynamic: Dynamic
+  select_period: Select period
+  transactions: Transactions
+  trips_payments_by_type: Trips payments by type
+  trips_total: Trips total
+  period: Period
+  graduation: Graduation
+  cross_station: Cross station
+  select_cross_station: Select cross station
+  station: Stop
+  stations: Stops
+  add_widget: Add widget
+  select_widget: Select widget
+  settings: Settings
+  update_period: Update period
+  update_timeout_min: Update timeout (min.)
+  shift_time_min: Time shift (min.)
+  widget:
+    code: Code
+    trips_for_period: Trips for the period
+    travel_payments_trips_type_payment: Travel payments trips by type of payment
+    response_codes: Response codes
+    plan_execution: Plan execution
+    amount_travel_payments: Amount of travel payments
+    phone: Phone
+    card: Card
+    token: Token
+    virtual_card: Virtual card
+    qr: QR code
+    e_wallet: E-Wallet
+    transport_card: Transport Card
+    cash: Cash
+    success_payment: Success payment
+    insufficient_funds: Insufficient funds
+    session_expired: Session expired
+    operation_rejected: Operation rejected
+    success: Sucess
+    fail: Fail
+    merchant: Merchant
+    date: Date
+    tickets: Tickets
+    total: (Total {text})
+    trains_numbers: Board numbers
+    profile: Profile
+    revenue: Revenue
+    number_tickets: Number of tickets
+    top: top
+    all: all
+    top_trains_count: Top boards count
+    trains: Boards
+    show_all_trains: Show all boards
+    show_top_trains: Show top boards values
+    departure: Departure
+    board_number: Board number
+    with_reservation: With reservation
+    without_reservation: Without reservation
+    tickets_sold_by_period: Number of tickets sold during the period
+    returned_tickets: Returned tickets
+    trains_departure: Boards departure
+    percentage_occupancy_trains: Percentage of occupancy of boards with seats
+    average_ticket_price: Average ticket price
+    average_earnings_train: Average earnings from the board
+    tickets_sold_by_profile: Number of tickets sold by profile
+    tickets_sales_distribution_reservation_boards: Tickets sales distribution for reservation boards
+    top_up_by_period: Top-up by period
+    interval: Interval
+    graduation: Group By
+    graduation_DAY: Day
+    graduation_MONTH: Month
+    graduation_YEAR: Year
+    graduation_WEEK: Week
+    trips_count_by_period: Trips by period
+    trips_revenue_by_period: Trips revenue by period
+    act_status: TopUp Kind
+    topup_TOPUP_BY_THREEDS: Top up by 3ds
+    topup_TOPUP_BY_KEY: Top up by key
+    topup_TOPUP_BY_PHONE: Top up by phone
+    topup_TOPUP_BY_OPERATOR: Top up by operator
+    topup_TOPUP_BY_ALIAS: Top up by alias
+nav:
+  forward: Forward
+  backward: Backward
+  select_train: Train
+  no_trains: No trains
+  select_bus: Bus
+  payment: Pay
+  select_seats: Seats
+  select_passengers: Passengers
+  select_seats_and_passengers: Seats & Passengers
+  steps:
+    select_train: Select train
+    select_seats_and_passengers: Select seats and passengers
+    payment: Pay for seats
+  soft_launch: SOFT LAUNCH
+  back_to_old: Back to old reservation website
+login:
+  welcome: Welcome Back!
+  forgot: Forgot/Reset password?
+  register: Sign Up
+  cancel: Cancel
+  log_in: Log In
+  password: Password
+  username: Login
+  sign_in: Sign In
+  code: Code
+  client_id: Client Id
+  client_secret: Client Secret
+  agree_with: I agree with
+  terms_and_conditions: Terms and conditions
+  policy: Privacy Policy
+
+components:
+  ticket_flow:
+    common:
+      departure: Departure
+      arrival: Arrival
+      cost: COST
+      total_cost: TOTAL
+      passenger: Passenger
+      name: Name
+      birth: Birth Day
+      class: Class
+      document_id: National ID
+      seat: Seat
+      coach: Coach
+      train: Train
+      bus: Bus
+      distance: Distance
+      km: km
+      duration: Duration
+      seqno: Seqno
+      timeTo: Time To
+      stopTime: Stop Time
+      enr_obs_commission: ENR
+      enr_bank_commission: Booking Fee
+      station: Station
+      rdistance: Distance in calculation
+      cost_with_discount: Cost with discounts
+      regular: Regular
+      ticket_cost: Ticket Cost
+  book_tickets: Book Tickets
+  ticket:
+    route: Route
+    select_seats: Select seats
+    watch_route: Show route
+    starting: Starting
+    seat_available: Seats Available
+    no_reservation: No seats reservation
+  list:
+    id: Number
+    distance: Duration
+    price: Price
+    seats: Seat Avail
+    seat_number: Seat
+    train: Train
+    bus: Bus
+    select_seats: Select seats
+    user: Passenger
+    action: Actions
+    arrival: Arrival
+    departure: Departure
+    from: From
+    to: To
+  common:
+    credit_card:
+      name: Name
+      holder_name: cardholder name
+      card_number: card number
+      john: John Doe
+      expiration: expiration
+      expiration_mm_yy: Expiration (mm/yy)
+      card_number_form: Card Number
+      valid: VALID
+      thru: THRU
+      security_code: security code
+      security_code_form: Security Code
+    step_card:
+      ticket_info: Tickets information
+      route_info: Route
+      passengers_info: Passengers
+      contact_info: Contact
+      payment_info: Payment Info
+    h: h
+    m: m
+    oneway: One Way
+    roundtrip: Round Trip
+    from: From
+    to: To
+    profile: Profile
+    locationPlaceHolder: Please select location
+    locationPlaceHolderFrom: Please select from location
+    locationPlaceHolderTo: Please select to location
+    departure_date: Departure date
+    return_date: Return date
+    search: Search
+    one_way: One way
+    both_ways: Both ways
+    weekly_one_way: Weekly one way
+    weekly_both_ways: Weekly both ways
+    monthly_one_way: Monthly one way
+    monthly_both_ways: Monthly both ways
+    pick_day: Pick a day
+    no_data: No data
+    are_you_sure_to_delete: Are you sure you want to delete?
+    amount: Amount
+    count: Count
+btns:
+  add: Add
+  edit: Edit
+  prev_step: Prev Step
+  next_step: Next Step
+  pay: Buy
+  remove: Remove
+  addperson: Add ticket
+  save: Save
+  load: Load
+  generate: Generate
+  delete: Delete
+  apply: Apply
+  next: Next
+  back: Back
+  show: Info
+passenger:
+  add_passenger: Add passenger
+  first_name: First Name
+  second_name: Second Name
+  last_name: Last Name
+  passport_data: Passport
+  patronymic_name: Patronymic
+  birthdate: Birth Date
+  email: E-mail
+  phone: Phone
+  gender_label: Gender
+  passport_id: Passport number
+  gender:
+    0: Not Known
+    1: Male
+    2: Female
+    9: Not Applicable
+  select: Select
+  document_id: Document ID
+  national_id: National ID
+  national_id_should_be_14: National ID should contains 14 numbers
+  wrong_national_id: Wrong National ID
+  document_number: Passport or National ID
+  only_letters: Field should be for characters only
+  add_passenger_close: Add passenger and close
+error:
+  passenger_already_exist_with_national_id: Passenger with this national id already added in list
+  bad_creds: Wrong login or password
+  bad_email: Wrong email or password
+  bad_phone: Wrong phone or password
+  user_locked: Account is locked, please reset password by pressing «‎Forgot/Reset password?»
+  already_exists: Already exists
+  invalid_code: Invalid confirmation code
+  expired_code: Confirmation code has expired
+  name_is_req: Name is required.
+  field_is_required: Field is required
+  field_is_numeric: Please enter number
+  bad_email_format: Incorrect e-mail
+  bad_phone_format: Invalid phone
+  bad_email_or_phone_format: Incorrect e-mail or phone
+  password_already_used: Password has already been used
+  password_no_spaces: No spaces allowed
+  code_expired: Confirmation code has expired
+  something_wrong: Something went wrong
+  TICKET_NOT_AVAILABLE: Some seats not available. Please try again.
+  NOT_PERMISSIONS_FOR_UNLOCK: You have not permissions for unlock
+  NOT_PERMISSIONS_FOR_SPLIT_MERGE: You have not permissions for Merge/Split in this zone
+  MERGE_SPLIT_TIME_IS_UP: Time is up for Merge/Split
+  you_have_not_ability_to_split_merge: You have not ability to Merge/Split
+  notFindAvailableSeatsCount: All seats are sold already.
+  mail_format: Wrong e-mail
+
+payment:
+  orderpayed: You successfully bought tickets
+  succes: Success
+  rrn: RRN
+  type: Payment Type
+  cash: Cash
+  card: Bank Card
+  not_payed: Order was canceled!
+
+passengers:
+  adding: Adding new passenger
+  editing: Editing  Passenger Information
+  new: Add Passenger
+  name: Name
+  add: Add
+  select_passenger: Please select passenger
+  without_seat: Ticket without seat number not require select passenger
+  save: Save
+  change_passenger: Change passenger
+  unselect_seat: Unselect seat
+validation:
+  required: This field is required
+  select_location: Please select location
+  select_departure_date: Please select departure date
+  select_return_date: Please select return date
+  return_date_after: Return date should be after departure date
+  captcha_required: Please solve the captcha
+
+status:
+  server_error: Server Error
+  success: Success
+
+copyright:
+  bpc: Copyright {copy} {year}, BPC Group. All rights reserved.
+  enr: ENR License 2021/07/15. Any illegal usage, dissemination or reproduction of this web-site content and related AFC O-CITY software parts will result in immediate legal action
+  common: Any copy of the content of this web-site, distribution or transfer to third parties without prior written approval by BPC GROUP is prohibited. If you have any questions, comments or suggestions, please email us at
+  provided_by: Provided by
+  powered_by: Powered by
+
+trains:
+  new: Add new train
+  add_coach: Add coach
+  import: Import Train From File
+train:
+  no_seats_class: This coach has class without seat reservation. Please click 'Add ticket' for adding ticket.
+  external_seats_class: This coach has external seat reservation. Please click 'Add ticket' for adding ticket.
+  reservation_is_end: Reservation is end
+  statistic: Test all!
+
+orders:
+  open_ticket: Open Ticket
+  status: Status
+  status_0: Not available
+  status_1: Active
+  status_2: Reserved
+  status_3: Used
+  status_4: Paid
+  status_5: Returned
+  status_6: Locked
+  status_7: Locked
+  status_8: Deleted
+  status_9: Canceled
+  status_10: Not Paid
+  passport: Passport
+  refund_ticket: Return ticket
+  number: Number
+  train: Train
+  departure: Departure
+  arrival: Arrival
+  refund_value: Returned
+searchtickets:
+  with_transfers: With transfers
+  without_reservations: Without reservations
+  with_reservations: With reservations
+dialogs:
+  confirmation: Confirmation
+  confirm:
+    ticket_refund: Sum to refund is {amount}. Are you sure to refund this ticket?
+    ticket_is_returned: Ticket is refunded.
+    remove_coach: Do you want to remove coach?
+    remove_stp: Do you want to remove trip point?
+    remove_passenger: Do you want to remove passenger?
+  success: Success
+  save: Save
+  show: Show
+  add: Add
+  save_close: Save and close
+  add_close: Add and close
+  add_passenger_close: dialogs.add_passenger_close
+coaches:
+  new: New Coach
+  class: Coach Class
+  name: Coach Name
+  edit_dialog_caption: Edit {name} (#{id})
+  regId: Coach Code
+  seats: Seats Count
+  no_seats: without reservation
+  adding_new_coach: Add new coach type
+  cols: cols
+  coach_rows: rows
+  reservation: Reservation
+  with_seats: With Reservation
+  not_selected: Not selected
+  passageway: Passageway
+  by_code: Code
+  please_give_new_coach_type_name: Please provide new coach type name
+workorders:
+  error_unique_coaches: The coaches numbers must be unique
+  coach: Coach Class
+  coachnumber: Number
+  newcoach: Add coach
+  newstp: Add
+  arrival: Arrival
+  stp: Station
+  departure: Departure
+  distance: Distance
+  targetDate: Target date
+  table:
+    actions: Actions
+  edit: Edit
+  messages:
+    class_not_selected: Select coach
+    stp_not_selected: Select point
+  new_work_order: Add Trip
+  trainame: Train
+  startDate: Start date
+  trainname: Train
+  stations: Route
+  coaches: Coaches
+  schedule: Time-table
+  generate_period: Period
+  schedule_enable: Scheduled
+  repeat: Repeat
+  everyday: Everyday
+  week: Week days
+  odd: Odd days
+  even: Even days
+  select_weekdays: Select days
+  prereservation: Pre reservation
+  serviceName: Service name
+  serviceBackName: Service Back Name
+  direction: Direction
+  towards: Towards
+  backwards: Backwards
+  work_days: Only work days
+  no_friday: No Fridays
+  include: Include
+  add_reservation: add station
+  seatCount: Reserved count
+  station: Station Name
+  station_search: Station search
+  prereservation_profiles: Counter
+  endDate: End Date
+  scheduleDialog: Edit Workorder Template {name} (#{id})
+  quotas: Quotas
+  segment: Segment
+  total: Total
+  new_work_order_scheduler: New Scheduler for Work Orders
+  status: Status
+  draft: Draft
+  active: Active
+  merge: Merge
+  split: Split
+  class: Class
+  quotas_save: Save
+  avail_classes: Can available classes in this train
+  avail_profiles: Fares and profiles
+  deactivate: Deactivate
+  activate: Activate
+  new_code_reservation: New resevation
+  expiry: Expiry
+  code: Code
+  name: Name
+  new: new
+  code_reservation: Code reservation
+  code_should_unique: This code already used
+  intrip: in trip
+  title: Trips
+  sch_title: Scheduler for Work Orders
+  seqno: Order
+  no_seat_percent: No seat percent
+  pcm_title: Devices Work Order
+  type: Type
+  status_undefined: Not set
+  status_99: Deleted
+  status_90: Deleted
+  status_0: Not Active
+  status_2: Closed
+  status_1: Active
+  type_1: Train
+  type_100: Shift
+  type_101: PCM shift
+  type_104: Working shift
+  type_103: Storing shift
+  assign_type_ROLE_ENR_COM_PCM_OPENER: Opener (Manager)
+  assign_type_ROLE_ENR_COM_PCM_RECIPIENT: Recipient (Conductor)
+  assign_type_ROLE_ENR_COM_PCM_CLOSER: Closer (Manager)
+  delete: Delete and close
+  reverse: Reverse
+  branch: Branch
+  external: External
+  active_work_order: Active Shift
+  opened: Started
+  closed: Closed
+  force_close: Force close
+  eventDate: Event Date
+  clear_quota: Clear All Quota
+  clear_quota_sure: Are you sure to clear all quota information?
+  generate_train: Generate train for date
+  clone: Clone
+  are_yuo_sure_clone: Are you sure to clone?
+  please_write_new_train_name: Please enter new train name.
+  deleted: Deleted
+  cloned_success: Cloned successfully!
+  are_yuo_sure_delete: Are you sure to delete?
+  cloned_from: Cloned from
+  deleted_success: Deleted successfully!
+  upload_quotas: Upload quotas
+  download_quta: Download quotas
+  counter_profiles: Profiles
+  counter_medals: Medals
+  counter_vouchers: Vouchers
+  merge_success: Merge successfully!
+  split_success: Split successfully!
+  has_unsaved_quota_data: You have unsaved quota data.
+  unlock: Unlock
+  sync_trips: Sync Trips
+  are_yuo_sure_sync: Are you sure to sync schedule to Trips?
+  audit: Audit
+  statistic: Statistic
+  data: Settings
+  select: Select
+  scedulers_for: Schedulers for
+  are_yuo_sure_sync_counters: Are you sure to sync counters?
+  sync_counters: Sync counters
+  sync_success: Sync success
+  are_yuo_sure_deactivate: Are you sure to deactivate?
+  are_yuo_sure_deactivate_has: Coach has sold tickets! Are you sure to deactivate?
+  are_yuo_sure_activate: Are you sure to activate?
+  quota_no_seat_percent: Quota No seat percent
+  sold: Sold
+  on_the_way: On The Way
+  already_exist: This Schedule Already Exist
+  sync_schedulers: Are you sure to sync schedule for all trips?
+  syncSchedulers: Sync Schedulers
+  train_statistic: Train Statistic
+  stops: Stop Count
+  timing: Timing
+  train_mode: workorders.train_mode
+  clear_quatas_in_coach_sure: Are you sure to clear quotas?
+  clear_quatas_in_coach: Clear quotas
+  testtom: Test TOM
+  to_activate_please_add_coaches: For activation please add valid coaches to your train and save
+  please_fill_all_coaches_classes: Please add at least one coach and fill coach classes and save
+  you_have_unsaved_quotas: You changed some qoutas. All changed will be missed. Continue?
+  has_unsaved_data: Some data was changed. All changed data was missed. Do you want close without save?
+table:
+  sort_by: Sort by
+  workorders: Trips
+  filter:
+    filter: Filter
+    reset: Reset Filter
+calendar:
+  mo: Monday
+  we: Wednesday
+  tu: Tuesday
+  th: Thirthday
+  fr: Friday
+  sa: Saturday
+  su: Sunday
+faremaster:
+  add: Add
+  new_fare: New
+  id: Number
+  calculate: Calculate test distance
+  amount: Calc result(test)
+  coach_class: Class
+  personKind: Person Kind
+  fareKind: Fare Specification Type
+  distance_table: Fare Distance table
+  test_fares: Test fares
+  search_routes: Search routes
+  currency: currency
+  upload: upload excel
+  download: faremaster.download
+  tarifs_map: Tariffs map
+  faremaster: Fare Master
+  enr_train_type: Train Type
+  fareSpecification: Fare Specification
+  upl_fare_specification: Fare Specification Uploading
+  upl_spec: Upload Specification
+  user_kind: Profile Type
+  save: Save
+  saveFareMatrix: Save and Test
+  subscription_profile: Subscription Profile
+  month_param: Month Count
+coach:
+  classname: Class Name
+  military: Military
+  vip: reserved for VIP
+  professor: reserved for  Professor
+  reserved: Sold
+  free: Free
+  name: Coach name
+  web: web
+  not_free: not free
+  departure: departure
+  cashier: cashier
+  agent: agent
+  emergency: emergency
+  regular: cashier free
+  locked: Locked
+  other_quota: In other zone
+fare:
+  name: Fare Name
+  operationsmasterfile: Select fares_operations.xlsx file
+  faremasterfile: Select Excel file with Fare Matrix
+  values: Matrix Values
+  interval: Interval
+payments:
+  time:
+    countdown: Please buy tickets in
+  ticket_expired: Ticket reservation is canceled.
+  ticket_expired_details: Please try found new Seats.
+gatesmonitoring:
+  device_is_selected: Device is selected
+  device_number: Device number
+  entry_validator: Entry validator
+  exit_validator: Exit validator
+  manage: Manage
+  current_station_with_id: «{name}» station (#{id})
+  current_station: «{name}» station
+  status: Status
+  gate: Gate
+  gates: Gates
+  line: Line
+  settings: Settings
+  entry: Entry
+  exit: Exit
+  bidirectional: Bidirectional
+  station_cheking_label: Station cheking feature
+  time_before_label: Time range before departure of a train to allow entrance, min
+  time_after_label: Time range after departure of a train to allow entrance, min
+  url_ccu_label: URL for CCU
+  merchant_id_label: Merchant ID
+  url_sftp_ip_label: URL for SFTP server or IP
+  port_sftp_label: Port for SFTP server
+  user_sftp_label: User for SFTP server
+  password_sftp_label: Password for SFTP server
+  validation_timeout_label: Validation timeout
+  gates_mode_label: Gates mode
+  gate_mode_label: Gate mode
+  close_gates_label: Close all gates
+  open_gates_label: Open all gates
+  close_gate_label: Close gate
+  open_gate_label: Open gate
+  gate_maintenance_mode_label: Gate maintenance mode
+  maintenance_commentary_label: Maintenance commentary
+  gate_uptime_label: Gate uptime
+  last_response_label: Last response
+  active: active
+  inactive: inactive
+  closed: Closed
+  are_u_sure_to_make_bidirection: Are you sure to set all gates in line bidirectional?
+  are_u_sure_to_make_entry: Are you sure to set all gates in line entry?
+  are_u_sure_to_make_exit: Are you sure to set all gates in line exit?
+  are_u_sure_to_close_all_gates: Are you sure to close all gates in line?
+  are_u_sure_to_close_gate: Are you sure to close gate?
+  are_u_sure_to_enry_gate: Are you sure to make gate entry?
+  are_u_sure_to_exit_gate: Are you sure to make gate exit?
+  are_u_sure_to_bi_gate: Are you sure to make gate bidirectional?
+  are_u_sure_to_maintenance: Are you sure to enter in maintenance mode? Please add comments.
+  maintenance: Maintenance
+  has_gates: Has Gates
+servicetrippoints:
+  id: Id
+  name: Name
+  shortName: Station ID
+  description: Station Code
+  zones: Region
+  enr_area: Area
+  enr_region: Region
+  enr_governorate: Governorate
+  office_name: Office
+  window: Window
+  station: Station
+  windows: Windows
+  city_office: City Office
+  cityofficesgroup: City Offices Group
+  location: Location
+  always_offline: Always offline
+  lat: Latitude
+  lng: Longitude
+  line_name: Line name
+  number: Number
+  numbers: Numbers
+  active: Active
+vuelist:
+  actions: Actions
+  upload:
+    select_file: Select File
+  uploader:
+    chosefile: Select File
+    export: Export
+  filter: Filter
+  resetFilter: Reset
+  export: Export
+
+fares:
+  enr_fare_details: Specification
+  enr_coach_class: Class
+  enr_train_type: Train Type
+  id: ID
+  distance: Distance
+  load_test_data: Load Expected Excel file
+  test: Test
+  step: Step
+  new_fare: New Fare
+  distance_from: from
+  distance_to: to
+  new_penalty: New Penalty
+  params: Params
+  with_nds: With TAXes
+  add_operations: Add operations
+  enr_voucher_department: Voucher Department
+  upg_clasess: Upgrage classes
+  need_select_two_classes: Please select two classes
+  expression: Expression
+  recalculate: Recalculate
+  train_descr: Train Description Rule
+  interval: Interval
+  from: From
+  to: To
+  calculator: Calculator
+  attached: Attached
+  in_period: In period
+common:
+  upload: Upload
+  localization: Localization Block
+  andClose: and close
+  confirm: Confirm
+  days: d
+  yes: Yes
+  no: No
+  merchant: Merchant
+  refresh: Refresh
+  loading: Loading...
+  upl_success: Uploaded successfully!
+  are_u_delete: Are you sure to delete?
+  deleted_success: Deleted successfully!
+  end_date: to date
+  start_date: from date
+  add: Add
+  zone: Zone
+  warn: Warning
+  ok: Ok
+  close: Close
+  save_as: Save As
+  from: From
+  to: To
+  free: Free
+  at: at
+  search: Search
+  date_label: Date
+  plurarization:
+    last:
+      day: Last
+      week: Last
+      month: Last
+      quarter: Last
+      year: Last
+  date:
+    day: Day
+    week: Week
+    month: Month
+    quarter: Quarter
+    year: Year
+    plurarization:
+      day: day | days
+      week: week | weeks
+      quarter: quarter | quarters
+      month: month | months
+      year: year | years
+  master: Master
+  target: Target
+  expired: Expired
+  reserved: Reserved
+  status: Status
+  cancel_success: Cancel Success
+  cancel: Cancel
+  not_seats: No seats
+  information: Information
+  saved_successfully: Saved successfully
+  version: Version
+  work_order_not_open: Shift is not open.
+services:
+  id: Id
+  name: Name
+  enr_train_type: Train Type
+  enr_fare_details: Fare Details
+  enr_train_description: Description
+  enr_train_category: Category
+  enr_train_kind: Sub Type
+  description: Ride Number
+  shortName: Ride Id
+  groupId: Branch Group ID
+  totalDistance: Total Distance
+  reverse: Reverse
+  meters: meters
+  showUnselected: Show Unselected
+  book_external: Book from the external system
+  started_date: Started Date
+  adding_new_train: New train Schedule
+  classes: Classes
+  mark_external: Mark external
+  unmark_external: Unmark external
+  params: Params
+  seqno: Order
+  timeTo: TimeTo (min)
+  stopTime: Stop Time(min)
+  parent: Owner
+uploader:
+  upload_trains: Upload trains data
+  upload_workorders: Upload work order Scheduler
+agent:
+  title: Agent ability
+  at: from
+  shift: Shift is opened
+  shift_is_not_opened: Shift is not open. Please open to start working.
+  close_shift: Close shift
+  open_shift: Open shift
+  balance: Balance
+settings:
+  btn_reset: Change password
+  reset_code: Code
+  password_repeat: Repeat password
+  password: Password
+  btn_send_code: Send code
+  phone: phone
+  email: E-mail
+  save: Save
+  first_name: First Name
+  last_name: Last Name
+  password_reset: Change password
+  password_reset_code_message: Confirmation code will be sent to {to}
+  password_reset_notification:
+    title: Password change
+    message: Password has been successfully changed
+passenger_acc:
+  title: Passenger account
+  error: Error
+  card:
+    all: All cards
+    add: Add card
+    add_submit: Add card
+    add_dialog_title: Add card
+    transport: Transport card
+    bank: Bank card
+    key: Card number
+    expiry: Expiry
+    alias: Card number
+    code: Code
+    add_success_title: Card added
+    add_success_message: Card [card] added
+    validation:
+      key_required: Enter card number
+      key_length: Enter 16 or 19 digits
+      expiry_required: Enter expiry
+      alias_required: Enter card number
+      alias_length: Enter 16 digits
+      code_required_length: Enter 5-digit code
+  form:
+    cancel: Cancel
+  navigation:
+    history: History
+    tickets: Tickets
+    settings: Settings
+  history:
+    no_data_total: No data.
+    no_data: No data for card [card].
+    table:
+      balance: Balance
+      amount: Amount
+      status: Payment status
+      datetime: Date & Time
+      card: Card
+      transport: Transport
+      route: Route
+    status:
+      CLOSED: Closed
+      OPEN: Open
+    transport:
+      all: All
+      bus: Bus
+      trolley_bus: Trolleybus
+      train: Train
+      taxi: Taxi
+  tickets:
+    buy: Buy
+    active: Active
+    button_buy: Buy
+    buy_dialog_title: Buy ticket
+    expires: Valid
+    bind_success_title: Ticket bought
+    bind_success_message: Ticket bound to card [card]
+    no_tickets: No tickets for card [card].
+    no_tickets_total: You don't have bought tickets.
+    no_fares: No fares available.
+    period:
+      CURRENT: Current month
+      NEXT: Next month
+    form:
+      idtag: Card
+      account: Account
+      period: Period
+    view:
+      label: View
+      table: Table
+      cards: Cards
+  settings:
+    locale: Language
+    password_reset: Change password
+    password_reset_notification:
+      title: Password change
+      message: Password has been successfully changed
+  auth:
+    nav_login: Login
+    nav_logout: Logout
+    user_login: Phone
+    password: Password
+    password_repeat: Repeat password
+    btn_login: Login
+    to_login: Login
+    to_registration: Register
+    to_reset: Forgot password?
+    registration_code: Code
+    reset_code: Code
+    btn_send_code: Send code
+    btn_register: Register
+    btn_reset: Change password
+    register_success_notification:
+      title: Registration complete
+      message: Now you can enter passenger account using phone and password
+    reset_success_notification:
+      title: Password successfully changed
+      message: Now you can enter passenger account using phone and password
+    password_reset_code_message: Confirmation code will be sent to phone [phone]
+    pages:
+      login: Login
+      registration: Register
+      registration_next: Register
+      reset: Password reset
+      reset_next: Password reset
+    validation:
+      login_required: Enter phone
+      password_required: Enter password
+      password_repeat_required: Enter password again
+      code_required: Enter code
+      passwords_dont_match: Passwords don't match
+      password_length: Password must have at least 7 characters
+      password_format: Password should include digits, letters and special chars
+      401: Invalid login or password
+operations:
+  precision: precision
+  percent: Percent
+  coach_class: Class
+  distance: km
+  cost: cost
+  operation: Operation
+  actions: Actions
+  rule: Rule
+  relative_class: FM CLass
+  addition: Addition
+  discount: Discount
+  context: Context
+  extra_fee: Extra Fee
+  distance_rule: Distance Rule
+  rule_name: Rule
+  min_fare: Min Fare (from matrix)
+  min_payment: Min Payment
+  add_from_context: Add from context
+  multiply: Multiply
+  roundup: Round Up (skip -0.002)
+  add: Add
+  roundup1: Round Up (precision)
+  eround: Round with trunc precision
+  tround: Round Up (skip -0.0019)
+  precision_should_be_more_zero: Precision should be > 0
+  max_payment: Max Payment
+  static_fee: Static Fee
+stations:
+  new: New Station
+  code: Station Code
+  name: Station Name
+  new_office: New office
+  new_window: New Window
+  window_name: Window Number
+  office_name: Office Name
+  is_city_office: Is city office
+  additional_fee: Additional fee
+  new_city_office_group: New City Office Group
+  new_line: New line
+messages:
+  data_not_found: Data not found
+fields:
+  name: Name
+  code: Code
+  key: Key
+  shortName: Code
+  id: Id
+  edit_dialog_caption: Edit Field
+  new: Add Field
+  type: Type
+  medal: Medals
+  user_kind: Profiles
+  enr_voucher: Vouchers
+  enr_counter_groups: Counter Groups
+  enr_role: Role
+  name_ar: Name (ar)
+  counter_group_name: Group name
+  migrate_time: Migration time
+  migrate_to: Migration To
+  canMergeSplit: Who can split-merge (roles)
+  split_border: Split border time, min
+  merge_border: Merge border time, min
+  split_merge: Can split-merge always
+  enr_contract: Contract
+  enr_group_ticket_profiles: Group Profiles
+  locked: Locked
+  show_in_tom: Show In Tom
+distances:
+  error_identical_stations: Identical stations cannot follow each other
+  new: New Branch
+  used_in: Used in trains
+  please_write_new_name: Please write new Branch Group ID
+workorder_quota:
+  total: Total
+  cashier: Cashier
+  regular: Regular
+  departure: Departure
+  apply: Apply
+  refresh: Refresh
+  save_mirror: Save with mirror
+  save_mirror_regular: Save mirror Regular
+  sync_like_regular: sync
+  sync: sync(regular)
+  locked: Locked (Emergency) seats
+  not_avail: No quota available for
+  not_locked_seats: No locked (Emergency) seat available for unlock
+  will_updated: Will updated
+  table: Quota statistic
+  kind: Kind
+  from: From
+  to: To
+  count: Count
+  sold: Sold by profiles
+  tripCount: Trips
+  quota_kind: Quota Type
+  available: Available seats
+reports:
+  count: Count
+  price: Price
+  payment_type: Payment Type
+  description: Description
+  response_code: Response code
+  device_number: Device Number
+  payment_date: Payment Date
+  terminal_date: Terminal Date
+  percent: Percent, %
+  amount: Amount
+  quantity: Quantity, num
+  status: Status
+  total: Total
+  generate_report: Generate report
+  select_report: Please select report
+  processing: Processing...
+  upload_report: Upload
+  not_started: Pending.
+  error: Error!
+  completionDate: Completion
+  params: Params
+  field: Field
+  datetime: Date Time
+  number: Number
+  string: String
+  station: Station
+  train: Train
+  office: Office
+  window: Window
+  unit: Strategic unit
+  sales: Sales channel
+  shift: Shift
+  merchant: Merchant
+  name: Name
+  from: From
+  to: To
+  field_INTERVAL: Interval
+  field_TO: To
+  field_SHIFT: Shift
+  field_FROM: From
+  field_enr_coach_class: Coach Class
+  field_enr_region: Region
+  field_enr_area: Area
+  field_STATION: Station
+  field_WINDOW: Window
+  field_enr_governorate: Governorate
+  field_enr_contract: Subscription type
+  field_enr_voucher_department: Department
+  field_enr_voucher_organization: Organization
+  field_sales_channel: Sales channel
+  field_OFFICE: Office
+  field_TRAIN: Train
+  field_DAY: Day
+  field_DATE: Date
+  field_user_kind: Profile
+  field_enr_train_type: Train Type
+  field_enr_fare_details: Fare Matrix
+  field_enr_train_category: Train Category
+  field_enr_train_kind: Train Kind
+  field_enr_train_description: Train Description
+  field_card_type: Card Type
+  field_SALES_CHANNEL: Sales channel
+  field_UNIT: Strategic Unit
+  location: Location
+  interval: Interval
+  date: Date
+  createdDate: Created Date
+  file: File
+  report: Report
+  enr_penalty_for_action: Penalty for action
+  enr_penalty_distribution: Penalty distribution
+  enr_train_description: Train Description
+  enr_luggage_distance: Luggage distance
+  enr_luggage_weight: Luggage weight
+  enr_penalty_name: Penalty name
+  distance_rule: Distance Rules
+  enr_special_seats_quota: Special quota
+  enr_voucher: Voucher
+  enr_voucher_organization: Voucher Organization
+  groupBy: Group By
+  column: Column
+  vehicle: Vehicle's Depot ID
+  route: Line
+  driver: Driver
+  enr_contract: Contract
+  field_km_amount: Km Amount
+  field_line: Line
+  km_amount: KM Amount
+  enr_group_ticket_profiles: Group Profiles
+  medals: Medal
+  yaxe: Y axe
+  xaxe: X axe
+  yaxes: Y axes
+  chartparams: Chart Params
+  od_distance_rule: Od Distance Rule
+  enr_profile: Profile
+  subscription_profile: Profile
+  actions: Actions
+  edit: Edit
+  user: User
+  device: Device
+  source: Source
+  device_type: Device Type
+  idtag_type: Idtag Type
+  idtag_status: Idtag Status
+  trip_type: Trip Type
+  transaction_type: Transaction Type
+  user_type: User Type
+  action_type: Action Type
+  trans_state: Transaction State
+  source_type:
+    route: Route
+    vehicle: Vehicle
+    stop: Stop
+  records_jasper_limit: Limit Records for Jasper
+merchantservice:
+  new: New Report
+  merchants: Merchants
+  remove: Remove
+  add: Add
+  key: Key
+  implClass: ImplClass
+  field: Field
+  station: Station
+  active: Active
+  templateJasper: Jasper Template
+  name: Name
+  addparam: Add Param
+  reportParams: Report Params
+  value: Value
+  requested: Requested
+  mandatory: Mandatory
+  type: Type
+  fileName: File Name
+  fileNameShouldBe: File Extension should be pdf or xlsx
+  multiple: Multiple
+  time: With Time
+  day_mode: Day mode
+  seqno: Order
+  acl: Access
+  area_code: Area key (jasper)
+  region_code: Region key (jasper)
+  governorate_code: Governorate key (jasper)
+  station_code: Station key (jasper)
+  office_code: Office key (jasper)
+  win_code: Window key (jasper)
+  from_code: From (jasper)
+  to_code: To (jasper)
+  code: Code
+  fileType: File Type
+  TRAIN_SCHEDULE: TRAIN_SCHEDULE
+  NONE: NONE
+  converter: Generator
+  ROUTE_TRANSFORMATION: Route Transformation Report
+  CARD_CHARGE: Card Charge Report
+  DRIVER_CARD_USAGE: Driver Card Usage Report
+  DAILY_PAS_RIDE_BY_PAS_TYPE: Daily Passenger Ride By Passenger Type
+  CARD_ENROLLMENT: Card Enrollment Report
+  CARD_USAGE_BY_BUS: Card Usage By Bus Report
+  userOwnerFilter: User Filter
+  OBS_REPORT: Report
+  DATA: Data provider
+  SQL_DATA: SQL_DATA
+  sql: SQL
+  datatype: Data type
+  groupped: Groupped
+  date_format: Date format
+  OBS_CHARTS_REPORT: Charts
+  yvalue: Y value
+  is_form_param: Included in filter
+  subReports: Sub reports
+  number_format: Number Format
+  piemode: Pie Mode
+  chart_kind: Chart Kind
+  float_point: Float point
+  producer: Multiply generator
+  merchant: Merchant
+  service: Merchant Service
+  device_setting: Device Setting
+  is_link: Is Link
+  link_template: Link Template
+  user_role: User Role
+  INSPECTION_OPERATION: Inspection Operation
+  device_type: Device Type
+  VALIDATIONS: Validations
+  VALIDATIONS_PER_CATEGORY: Validations Per Category
+  SUPPLIES_EXPORT_AVM: Supplies export (AVM's transactions)
+  SUPPLIES_EXPORT_CST: Supplies export (customer service transactions)
+  SUPPLIES_EXPORT_ENT: Supplies export (external network transactions)
+  TOPUP_AND_SALES: Topup And Sales
+  TOPUP_AND_SALES_DETAILED: Topup And Sales Detailed
+  SQL_BASED: Sql Based
+  NOT_USED: Not Used
+  MEDIA_MANAGEMENT: Media Management
+  CUSTOMER_SERVICE_PER_CATEGORY: Customer Service Per Category
+  MOST_USED_DEVICES: Most Used Devices
+  MOST_USED_MEDIA: Most Used Media
+  CUSTOMER_SERVICE_BY_EVENT_TYPE: Customer Service By Event Type
+  CUSTOMER_SERVICE_BY_EVENT_SOURCE_USER: Customer Service By Event, Source, User
+devices:
+  status: Status
+  type_100: PCM
+  type_101: TOM
+  type_103: SAM
+  type_104: SIM
+  type_105: GATE
+  type_106: VALIDATOR
+  type_900: GROUP
+  status_0: Not active
+  status_99: Deleted
+  status_103: In office
+  status_104: Working
+  register: Add device
+  deviceNum: Device Number
+  prefix: Prefix
+  in_store: In CCO
+  pcm_working: Issued
+  return: Return To Office
+  issue: Issue
+  are_u_sure_issue_device: Are you sure to issue PCM ?
+  are_u_sure_return_device: Are you sure to return PCM to office ?
+  workOrders: Work Orders
+  assigments: Assigments
+  sold: Sold tickets
+  sold_amount: Sold Amount
+  refund: Refund tickets
+  refund_amount: Refund Amount
+  opened_shift: Opened PCM shift. Please close shift to return to office
+  type: Type
+  tom: TOM
+  pcm: PCM
+  station: Station
+  merchant: Merchant
+  place: Location
+  workOrdersHistory: History
+  current_shifts: Shifts
+  shiftId: Shift Id
+  corrections: Corrections
+  add_correction: Add correction
+  are_u_sure_add_correction: Are you sure to add correction?
+  sam: SAM
+  sim: SIM
+  subModules: Sub Modules
+  link: Link
+  unlink: Unlink
+  are_u_sure_close_work_order: Are sure to close workOrder?
+  window: Window
+  office: Office
+  gate: Gate
+  validator: Validator
+  id: Device Id
+  actions: Modify
+  owner: Owner
+  group: Group
+  groupName: Group Name
+  stationary_validator: Stationary Validator
+  mobile_validator: Mobile Validator
+  inspector: Inspector
+  device: Device
+  station_server: Station Server
+  barrier: Barrier
+  avm: Avm
+  bus: Bus
+  etn: Etn
+  csp: Csp
+roles:
+  inspector: inspector
+  tom_manager: tom manager
+  supervisor: Supervisor
+  set_roles: Set roles
+  canSetRoles: Who can manage
+  name: Role Name
+  authorityString: Authority String
+  add_role: Add new Role
+corrections:
+  ticket: Ticket
+  return_ticket: Return ticket
+  penalty: Penalty
+  kind: Kind
+  count: Count
+  add: Add correction
+  amount: Amount (EGP)
+  penalty_kind: Penalty kind
+  total: Total
+  total_correction: Total corrections
+  kind_TICKET: Tickets
+  kind_PURCHASE_CORRECTION: Tickets
+  kind_PENALTY_CORRECTION: Penalties
+  kind_GREET_CORRECTION: GREET_CORRECTION
+  kind_SUBSCRIPTION_CORRECTION: Subscr Correction
+  kind_REFUND_CORRECTION: Refund correction
+  kind_CORRECTION: Manual Correction
+  manual: Manual Saldo
+  corr_greet: Corr Greet
+  comments: Comments
+  penaltyEnr: Penalty Enr
+  penaltyConductor: Penalty Conductor
+  penaltyPolice: Penalty Police
+  penaltyStaffCare: Penalty Staff Care
+  penaltyStaffManager: Penalty Staff Manager
+  penaltyRetiredFund: Penalty Retired Fund
+  kind_correction: Manual Correction
+  kind_corr_penalty: Penalty correction
+  kind_corr_greet: Greet correction
+  kind_corr_purchase: Ticket purchase correction
+  kind_purchase: Ticket purchase
+  kind_corr_subscription: Subscription correction
+  kind_corr_refund: Refund correction
+  kind_penalty: Penalty
+  kind_greet: greet
+  kind_refund: refund
+  kind_subscription: subscription
+  not_corrected_saldo: Please correct you report. Add cash or add corrections
+  cash: Cash
+  report: Shift Report
+  done_success: Successfully returned to office
+events:
+  download: Download
+  cheque: Cheque
+  debit_credit: Debit/Credit
+  serviceName: Service name
+  title: Events
+  amount: Amount
+  shift: Shift
+  info: Info
+  ticket: Ticket
+  kmdistance: Distance
+  passengerIns: Passenger Ins
+  cityOfficeFees: City Office Fees
+  civilAid: CivilAid
+  decemberDiseaseFees: December Disease Fees
+  developmentFees: Development Fees
+  enrFee: Enr Fee
+  staffService: Staff Service
+  stampFees: StampFees
+  bankFee: Bank Fee
+  paymentDate: Payment Date
+  finances: Finances
+  event_date: Date
+  event: Event
+  salesChannel: Sales Channel
+  merchantLogin: Login
+  userFullName: User Name
+  username: Login
+  zeroKm: Zero Km
+  topprice: Top Price
+  reservationFees: Reservation Fees
+  ordernumber: Order number
+  status: Status
+  action: Action
+  eventDate: Event Date
+  panHash: PanHash
+  ern: ERN
+  rrn: RRN
+  pan: PAN
+  expiry: EXPIRY
+  terminalDate: Terminal Date
+  actionType: Action Type
+  batchId: BatchId
+  fareId: FareId
+  fareName: Fare name
+  idtagType: Type
+  shiftmode: Shiftmode
+  fkMerchantId: FkMerchantId
+  merchantName: Merchant
+  user: User
+  profileTypeFieldId: Profile
+  trainTypeFieldId: Train Type
+  device: Device
+  id: Transaction ID
+  idtagName: Card Number
+  mdorder: Order
+fields_counter:
+  group_name: Group Name (English)
+  group_name_ar: Group Name (Arabic)
+  edit_group: Edit Group `{name}` (#{id})
+  new: Add New Group
+  edit_group_profile: Edit group profile
+workorder_counter:
+  add_counter: Add Counter
+  counter: Counter Name
+audit:
+  commitDate: Commit Date
+  author: Author
+  action: Action
+  quotas_was_changed: Quotas was changed
+  data: Changes
+  version: Version
+  action_CLEAR_QUOTA: Clear all quotas
+  action_UPDATE_QUOTA: Change quotas
+  action_EDIT: Edit
+  what: Where
+  current: Current
+  was: Was
+  quota: Quotas
+  remove: removed
+  add: added
+  change: changed
+  counters: Counters
+  schedule: Schedule
+  coaches: Coaches
+  fields: Fields
+  params: Params
+  period: Period
+  limit: Limit
+workorder:
+  select: Select
+  is_opened: Shift Is opened
+  enter_device_num: Please enter device number.
+  fill_timetable: To continue please fill Time-table first and press save.
+  unsaved_quota: You change quota without saving. Please save quota or refresh on tab Quotas
+  shift_is_closed: Shift is closed
+workorder_schedule:
+  change_confirm: You try to change schedule. Clear all quotas?
+idtags:
+  add_tag: Add card
+  transport_card: Transport Card
+  card_type: Card Kind
+  name: Name
+  bank_card: Bank Card
+  virtual_card: Virtual Card
+  token: Token
+  face_id: Face Id
+  qr: QR
+  phone: Phone
+  by_cash: By Cash
+  e_wallet: E-Wallet
+  not_known: Not Known
+  status:
+    nuevo: New card assignment (key & system structure)
+    emitido: User category assigned to the card (ready for activation)
+    activado: Activated card (can be used on the whole system)
+    reportado: Card has been reported (lost, stolen, damaged, etc.)
+    inactivado: Not-active card (cannot be used inside the system)
+    defectuoso: Issues while the process of “NUEVO” or “EMITIDO”
+    new: New
+    ordered: Ordered
+    on_stock: On Stock
+    sent_for_personalization: Sent For Personalization
+    for_sale: For Sale
+    blocked_by_client: Blocked By Client
+    blocked_by_system: Blocked By System
+    valid: Valid
+    not_personalized: Not Personalized
+users:
+  nameOrLogin: Name or login or e-mail
+  gender_0: Not Known
+  gender_1: Male
+  gender_2: Female
+  gender_9: Not Applicable
+  login: Login
+  firstName: First Name
+  updatePassword: Update Password
+  password: Password
+  gender: Gender
+  add_user: Add user
+  lastName: Last Name
+  station: Station
+  stations: Stations
+  custom_authorities: Custom Authorities
+  username: Username
+  lastLoginDate: Last Login
+  role: Role
+  points: Location
+  roles: Roles
+  groups: Groups
+  agent_account: Agent Account
+  active: Active
+fields_user_kind:
+  custom_profile: Custom Profile
+  is_free: Is free
+  exclude_classes: Exclude Coach classes
+  include_classes: Include Coach classes
+  only_stand: Only Stand
+  passport_id: National id
+  document_id: Passport number
+  guide: Guide
+  guide_ar: Guide (ar)
+  always_rides: Always rides
+  is_personal: Is personal
+  not_active: Not Active
+  not_vip: Not Vip
+  not_ga2: Not GA2
+  not_seats: Not seats
+  need_document_with_reservation: Need document when reservation
+  document_with_reservation: Document for reservation
+  need_document_without_reservation: Need document when without reservation
+  document_without_reservation: Document without reservation
+  used_in_obs: Used In OBS
+enr_fare_details:
+  new: New Fare Matrix
+  new_distance_rule: New Distance Rule
+  new_extra_fee: New Extra Fee
+  is_vip: Is VIP
+  is_spanish: Is Spanish
+  stand_limit: Limit, %
+  day_limit: Available In, hours
+  stand_limit_tab: Limits
+enr_coach_class:
+  edit_class: Edit class {name} (#{id})
+  name_ar: Class Name (ar)
+  name: Class Name(en)
+enr_penalty_for_action:
+  police: Police, L.E.
+  conductor: Conductor, L.E.
+  enr: ENR, L.E.
+  cost: Cost, L.E.
+  staff_care: Staff Care, L.E.
+  station_manager: Station Manager, L.E.
+  retired_fund: Retired Fund, L.E.
+  distribution: Penalty distribution
+  penalty_qouta_enr: Penalty Qouta ENR
+  penalty_qouta_inspector: Penalty Qouta Inspector
+fare_operations:
+  distance_rule: Distance rules
+  extra_fee: Extra Fee
+  operation: Operation
+enr_voucher:
+  upgrade: Can Upgrade
+  train_number_expression: Expression Rule
+  no_seats_rule: No seats rule
+  specific_field_v1: Specific field Rule
+  specific_field_v2: Specific field Rule 2
+  medal: Medal
+  free: Free
+  post_recalculate_rule: Post Recalculate Rule
+  name: Name
+  name_ar: Name(ar)
+  edit_class: Edit
+  specific_group: Group
+  relative_specifc: Relative Fare Matrix
+buses:
+  new: New schedule
+calcfares:
+  subscriptionId: subscriptionId
+  regularCost: Regular
+  cost: cost
+  duration: duration
+  distance: distance
+  deviceNum: Device Number
+  calcresul: Calculate
+  from: From
+  to: To
+  trainMode: Train Mode
+re:
+  params: re.params
+zonefare:
+  new: New
+tickets:
+  reservations: Reservations
+  startDate: Start Date
+  trainName: Train Name
+  coachClass: Class
+  code: Code
+  train: Train
+  new_reservations: New reservation
+  count: Count
+  reservation: Reservation No
+  price_of_ticket: Price of the ticket
+enr_group_ticket_profiles:
+  new: New GroupProfile
+  discount_for_include: Discount (include classes)
+  discount_for_exclude: Discount (exclude classes)
+  discount_rate: Discount Rate
+  max_passengers: Max passengers
+  min_passengers: Min passengers
+group_reservations:
+  cancel: Cancel
+  are_yuo_sure_delete: Are you sure to cancel Reservation?
+  lock_tickets: Lock tickets
+charts:
+  bar: Bar
+  pie: Pie
+  line: Line
+  no_data: No data found
+enr_train_description:
+  new: New Train Description
+  support_classes: Support Classes
+event:
+  status:
+    closed: Closed
+    open: Open
+  action:
+    auth: Authorization
+    credit: Credit
+  transaction_type:
+    sale: Sale
+    topup: Topup
+  user_type:
+    normal: Normal
+    reduced_mobility: Reduced Mobility
+    elder: Elder
+    student: Student
+  action_type:
+    qr_purchase: QR Purchase
+    ticket_purchase: Ticket Purchase
+    idtag_enrollment: Card Enrollment
+    qr_payment: QR Payment
+    nfc_payment: NFC Payment
+    debt_repayment: Debt Recovery
+    transfer: Transfer
+    web_manual: WEB manual
+    tap_manual: TAP manual
+    operator_manual: Operator manual
+    subscription_purchase: Subscription Purchase
+    payment: Payment
+    online: Online
+    top_up: TOP UP
+    ticket_purchase_return: Ticket purchase return
+    virtual_card_purchase: Virtual Card Purchase
+    idtag_purchase_with_topup: Card purchase with TOP UP
+    topup_by_treeds: TOP UP By 3DS
+    topup_by_alias: TOP UP By Alias
+    topup_by_phone: TOP UP By Phone
+    topup_by_operator: TOP UP By Operator
+    topup_by_acc_id: TOP UP By Account id
+    topup_reverse_by_key: TOP UP reverse By Key
+    topup_reverse_by_alias: TOP UP reverse By Alias
+    topup_reverse_by_phone: TOP UP reverse By Phone
+    topup_reverse_by_operator: TOP UP reverse By Operator
+    topup_reverse_by_acc_id: TOP UP reverse By Account
+    deposit: Deposit
+    treeds_payment: 3DS Payment
+    tap_in: TAP IN
+    tap_out: TAP OUT
+    settlement: Settlement
+    penalty: Penalty
+    miscellaneous: Miscellaneous
