@@ -34,10 +34,10 @@ order by TRUNC(payment_date, 'dd')
      */
 
     public static void main(String[] args) throws IOException, ExecutionException, InterruptedException {
-        String attoPath = "C:\\develop\\misc_tools\\src\\main\\resources\\humno\\Atto_inpput_12_17.xlsx";
+        String attoPath = "D:\\IdeaProjects\\misc_tools\\src\\main\\resources\\humno\\Atto_inpput_12_17.xlsx";
 //        String humnoPath = "/Users/werdn/Downloads/Humo_v22.xlsx";
-        String humnoPath = "C:\\develop\\misc_tools\\src\\main\\resources\\humno\\Humno_input_part2.xlsx";
-        String outPath = "C:\\develop\\misc_tools\\out\\Humno_lost_out_part2.xlsx";
+        String humnoPath = "D:\\IdeaProjects\\misc_tools\\src\\main\\resources\\humno\\Humno_input_part2.xlsx";
+        String outPath = "D:\\IdeaProjects\\misc_tools\\src\\main\\resources\\humno\\Humno_lost_out_part3.xlsx";
         ExecutorService executor = Executors.newFixedThreadPool(4);
 
         Future<List<Item>> sAtto = executor.submit(() -> buildItems(attoPath)
@@ -58,6 +58,7 @@ order by TRUNC(payment_date, 'dd')
         for (Item humnoItem : humnoItems) {
             List<Item> ai = attoMap.get(humnoItem.getPan() + humnoItem.getDate());
             if (ai == null) {
+                humnoItem.setDiff(humnoItem.getAmount());
                 continue;
             }
             if (ai.size() > 1) {
