@@ -64,6 +64,18 @@
             <artifactId>snakeyaml</artifactId>
             <version>1.29</version>
         </dependency>
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcprov-jdk15on</artifactId>
+            <version>1.68</version> <!-- Replace with the latest version if needed -->
+        </dependency>
+
+        <!-- Bouncy Castle PGP -->
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcpg-jdk15on</artifactId>
+            <version>1.68</version> <!-- Replace with the latest version if needed -->
+        </dependency>
     </dependencies>
 
 </project>

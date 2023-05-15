@@ -15,7 +15,7 @@ public class FlakeSearcher {
     //yyMMddHHmmss
     public static void main(String[] args) throws IOException, ParseException {
 //        String path = "E:\\temp\\1220\\2\\ru.bpc.otter.core.log.node1.txt";
-        String path = "E:\\temp\\1220\\2\\ru.bpc.otter.core.log.node2.txt";
+        String path = "D:\\temp\\0214\\app-node2\\ru.bpc.otter.core.log.node2.txt";
 
         List<String> lines = Files.readAllLines(Path.of(new File(path).toURI()));
 
