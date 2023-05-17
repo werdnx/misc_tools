@@ -4,11 +4,18 @@ import org.bouncycastle.bcpg.ArmoredOutputStream;
 import org.bouncycastle.bcpg.CompressionAlgorithmTags;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 import org.bouncycastle.openpgp.*;
+import org.bouncycastle.openpgp.jcajce.JcaPGPObjectFactory;
 import org.bouncycastle.openpgp.jcajce.JcaPGPPublicKeyRingCollection;
+import org.bouncycastle.openpgp.operator.PBESecretKeyDecryptor;
+import org.bouncycastle.openpgp.operator.jcajce.JcaKeyFingerprintCalculator;
+import org.bouncycastle.openpgp.operator.jcajce.JcePBESecretKeyDecryptorBuilder;
 import org.bouncycastle.openpgp.operator.jcajce.JcePGPDataEncryptorBuilder;
+import org.bouncycastle.openpgp.operator.jcajce.JcePublicKeyDataDecryptorFactoryBuilder;
 import org.bouncycastle.openpgp.operator.jcajce.JcePublicKeyKeyEncryptionMethodGenerator;
 
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.security.SecureRandom;
 import java.security.Security;
 import java.util.Date;
@@ -19,6 +26,22 @@ public class PgpExample {
     public static void main(String[] args) throws Exception {
         Security.addProvider(new BouncyCastleProvider());
 
+        decryptFileByAscKey();
+        //encryptStringByPemKey();
+    }
+
+    private static void decryptFileByAscKey() throws Exception {
+        PGPPrivateKey privateKey = readPrivateKey("D:\\IdeaProjects\\misc_tools\\src\\main\\resources\\pgp\\testkey.asc", "testkey".toCharArray());
+
+        // Decrypt the message
+        byte[] encryptedMessage = Files.readAllBytes(Paths.get("D:\\IdeaProjects\\misc_tools\\src\\main\\resources\\pgp\\O-City Advice 2.txt1.pgp"));
+        String message = decryptMessage(encryptedMessage, privateKey);
+
+        // Print the decrypted message
+        System.out.println(message);
+    }
+
+    private static void encryptStringByPemKey() throws Exception {
         // Load the public key ring from a file
         PGPPublicKey publicKey = readPublicKey(new FileInputStream("D:\\ocity\\saptco\\saab\\Sabb1@noexternalmail.hsbc.com_.pem"));
 
@@ -119,6 +142,96 @@ public class PgpExample {
         }
 
         return key;
+    }
+
+    private static PGPPrivateKey readPrivateKey(String fileName, char[] passPhrase) throws IOException, PGPException {
+        InputStream keyIn = new BufferedInputStream(new FileInputStream(fileName));
+        keyIn = PGPUtil.getDecoderStream(keyIn);
+        PGPPrivateKey privateKey = null;
+
+        PGPObjectFactory factory = new PGPObjectFactory(keyIn, new JcaKeyFingerprintCalculator());
+        PGPSecretKeyRing keyRing = null;
+        for (Iterator iter = factory.iterator(); iter.hasNext(); ) {
+            Object section = iter.next();
+
+            if (section instanceof PGPSecretKeyRing) {
+                keyRing = (PGPSecretKeyRing) section;
+                break;
+            }
+        }
+
+        Iterator<PGPSecretKey> keyIter = keyRing.getSecretKeys();
+        while (keyIter.hasNext()) {
+            PGPSecretKey key = keyIter.next();
+
+            if (key.isSigningKey()) {
+                PBESecretKeyDecryptor decryptor = new JcePBESecretKeyDecryptorBuilder()
+                        .setProvider("BC")
+                        .build(passPhrase);
+
+                privateKey = key.extractPrivateKey(decryptor);
+                if (privateKey != null) {
+                    return privateKey;
+                }
+            }
+        }
+        throw new IllegalStateException("Private key not found");
+    }
+
+    private static String decryptMessage(byte[] encryptedMessage, PGPPrivateKey privateKey) throws Exception {
+        InputStream in = new ByteArrayInputStream(encryptedMessage);
+        in = PGPUtil.getDecoderStream(in);
+
+        JcaPGPObjectFactory pgpF = new JcaPGPObjectFactory(in);
+        PGPEncryptedDataList enc;
+
+        Object o = pgpF.nextObject();
+        //
+        // the first object might be a PGP marker packet.
+        //
+        if (o instanceof PGPEncryptedDataList) {
+            enc = (PGPEncryptedDataList) o;
+        } else {
+            enc = (PGPEncryptedDataList) pgpF.nextObject();
+        }
+
+        //
+        // find the secret key
+        //
+        Iterator it = enc.getEncryptedDataObjects();
+        PGPPrivateKey sKey = null;
+        PGPPublicKeyEncryptedData pbe = null;
+        while (sKey == null && it.hasNext()) {
+            pbe = (PGPPublicKeyEncryptedData) it.next();
+            sKey = privateKey;
+        }
+
+        if (pbe != null) {
+            InputStream clear = pbe.getDataStream(new JcePublicKeyDataDecryptorFactoryBuilder().setProvider("BC").build(sKey));
+
+            JcaPGPObjectFactory pgpFact = new JcaPGPObjectFactory(clear);
+
+            PGPCompressedData cData = (PGPCompressedData) pgpFact.nextObject();
+
+            pgpFact = new JcaPGPObjectFactory(cData.getDataStream());
+
+            PGPLiteralData ld = (PGPLiteralData) pgpFact.nextObject();
+
+            InputStream unc = ld.getInputStream();
+            ByteArrayOutputStream out = new ByteArrayOutputStream();
+            int ch;
+
+            while ((ch = unc.read()) >= 0) {
+                out.write(ch);
+            }
+
+            byte[] returnBytes = out.toByteArray();
+            out.close();
+
+            return new String(returnBytes);
+        }
+
+        throw new IllegalArgumentException("message is not encrypted");
     }
 
 }
